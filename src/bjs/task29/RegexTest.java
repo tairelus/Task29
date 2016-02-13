@@ -33,8 +33,7 @@ public class RegexTest {
         }
 
         for (int i = 0; i < nameLength; i++) {
-            Character name_char = name.charAt(i);
-            if (!validCharacters.contains(name_char.toString())) {
+            if (validCharacters.indexOf(name.charAt(i)) == -1) {
                 return false;
             }
         }
